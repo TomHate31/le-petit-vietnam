@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Le Petit Vietnam</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <header><h1>Administration</h1></header>
+  <main>
+    <button id="login">Se connecter avec Google</button>
+    <div id="admin-panel" style="display:none;">
+      <h2>Gérer le menu</h2>
+      <form id="add-dish-form">
+        <input type="text" id="dish-name" placeholder="Nom du plat">
+        <input type="text" id="dish-price" placeholder="Prix">
+        <button type="submit">Ajouter</button>
+      </form>
+      <div id="dishes-list"></div>
+    </div>
+  </main>
+  <script type="module" src="../js/admin.js"></script>
+</body>
+</html>
