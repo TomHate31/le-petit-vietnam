@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin - Le Petit Vietnam</title><link rel="stylesheet" href="../assets/css/styles.css"></head>
+<body><header><h1>Administration</h1><a href="../">← Retour</a></header>
+<main><button id="login">Se connecter avec Google</button><button id="logout" style="display:none">Se déconnecter</button><p id="who"></p>
+<section id="crud" style="display:none"><h2>Gérer le menu</h2>
+<form id="add-dish-form"><input type="text" id="dish-name" placeholder="Nom du plat" required>
+<input type="number" step="0.01" id="dish-price" placeholder="Prix">
+<input type="text" id="dish-category" placeholder="Catégorie (ex: Entrées)" required>
+<input type="text" id="dish-subcategory" placeholder="Sous-catégorie (optionnel)">
+<textarea id="dish-desc" placeholder="Description (optionnelle)"></textarea>
+<button type="submit">Enregistrer</button></form><div id="dishes-list"></div></section>
+<section id="hours" style="display:none"><h2>Horaires</h2><textarea id="hours-json" rows="6" style="width:100%"></textarea>
+<br><button id="save-hours">Enregistrer les horaires</button></section>
+<section id="stats" style="display:none"><h2>Statistiques</h2><div>Total visites: <span id="visits">--</span></div><div id="top-dishes"></div></section>
+</main><script type="module" src="../js/admin.js"></script></body></html>
